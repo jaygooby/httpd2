@@ -419,6 +419,7 @@ pub fn default_content_type_map() -> BTreeMap<String, &'static str> {
         ("wasm", "application/wasm"),
         ("bin", "application/octet-stream"),
         ("pdf", "application/pdf"),
+        ("svg", "image/svg+xml"),
     ].into_iter().map(|(k, v)| (k.to_string(), v)).collect()
 }
 
