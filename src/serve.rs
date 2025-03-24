@@ -408,18 +408,18 @@ async fn open_precompressed(
 /// Produces the default file extension to MIME type mapping.
 pub fn default_content_type_map() -> BTreeMap<String, &'static str> {
     [
-        ("html", "text/html"),
-        ("css", "text/css"),
-        ("js", "text/javascript"),
-        ("woff2", "font/woff2"),
-        ("png", "image/png"),
-        ("jpg", "image/jpeg"),
-        ("gif", "image/gif"),
-        ("xml", "application/xml"),
-        ("wasm", "application/wasm"),
         ("bin", "application/octet-stream"),
+        ("css", "text/css"),
+        ("gif", "image/gif"),
+        ("html", "text/html"),
+        ("jpg", "image/jpeg"),
+        ("js", "text/javascript"),
         ("pdf", "application/pdf"),
+        ("png", "image/png"),
         ("svg", "image/svg+xml"),
+        ("wasm", "application/wasm"),
+        ("woff2", "font/woff2"),
+        ("xml", "application/xml"),
     ].into_iter().map(|(k, v)| (k.to_string(), v)).collect()
 }
 
